@@ -1,0 +1,32 @@
+body {
+    background-color: #ffe5ec; /*backgouncd jadi pink muda*/
+}
+h1 {
+    color: #ec0c92; /*warna tulisan jadi pink*/
+}
+p {
+    font-size: 18px; /*Ukuran font*/
+    font-family: Arial, sans-serif;/*Jenis font*/
+    text-align: center;/*Pengaturan teks menjadi tengahh*/
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+.grid-item {
+    background: lightblue;
+    padding: 20px;
+    text-align: center;
+}
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.flex-item {
+    background: lightcoral;
+    padding: 20px;
+    text-align: center;
+}
