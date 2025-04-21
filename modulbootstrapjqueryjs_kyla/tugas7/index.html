@@ -5,10 +5,8 @@
   <title>Form Registrasi</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Bootstrap 5 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
 <body>
@@ -16,28 +14,24 @@
   <div class="container mt-5">
     <h2><strong>Form Registrasi</strong></h2>
     <form id="formRegistrasi" novalidate>
-      <!-- Nama -->
       <div class="mb-3">
         <label for="nama" class="form-label">Nama</label>
         <input type="text" class="form-control" id="nama" placeholder="Masukkan Nama">
         <div id="errorNama" class="text-danger mt-1" style="display: none;">Nama tidak boleh kosong!</div>
       </div>
 
-      <!-- Hobi -->
       <div class="mb-3">
         <label for="hobi" class="form-label">Hobi</label>
         <input type="text" class="form-control" id="hobi" placeholder="Contoh: Membaca, Menulis">
         <div id="errorHobi" class="text-danger mt-1" style="display: none;">Hobi tidak boleh kosong!</div>
       </div>
 
-      <!-- Tempat Lahir -->
       <div class="mb-3">
         <label for="tempat" class="form-label">Tempat Lahir</label>
         <input type="text" class="form-control" id="tempat" placeholder="Contoh: Cilacap">
         <div id="errorTempat" class="text-danger mt-1" style="display: none;">Tempat lahir wajib diisi!</div>
       </div>
 
-      <!-- Tanggal Lahir (Number) -->
       <div class="mb-3">
         <label class="form-label">Tanggal Lahir</label>
         <div class="d-flex gap-2">
@@ -48,19 +42,16 @@
         <div id="errorTanggal" class="text-danger mt-1" style="display: none;">Tanggal lahir harus lengkap!</div>
       </div>
 
-      <!-- Warna Favorit -->
       <div class="mb-3">
         <label for="warna" class="form-label">Warna Favorit</label>
         <input type="text" class="form-control" id="warna" placeholder="Contoh: Biru, Merah, Ungu">
         <div id="errorWarna" class="text-danger mt-1" style="display: none;">Warna favorit tidak boleh kosong!</div>
       </div>
 
-      <!-- Tombol Submit -->
       <button type="submit" class="btn btn-primary">Submit</button>
     </form>
   </div>
 
-  <!-- Script jQuery -->
   <script>
     $(document).ready(function () {
       $('#formRegistrasi').on('submit', function (e) {
@@ -76,7 +67,6 @@
         const thn = $('#thn').val();
         const warna = $('#warna').val().trim();
 
-        // Validasi Nama
         if (nama === '') {
           $('#errorNama').show();
           $('#nama').addClass('is-invalid');
@@ -86,7 +76,6 @@
           $('#nama').removeClass('is-invalid').addClass('is-valid');
         }
 
-        // Validasi Hobi
         if (hobi === '') {
           $('#errorHobi').show();
           $('#hobi').addClass('is-invalid');
@@ -96,7 +85,6 @@
           $('#hobi').removeClass('is-invalid').addClass('is-valid');
         }
 
-        // Validasi Tempat
         if (tempat === '') {
           $('#errorTempat').show();
           $('#tempat').addClass('is-invalid');
@@ -106,7 +94,6 @@
           $('#tempat').removeClass('is-invalid').addClass('is-valid');
         }
 
-        // Validasi Tanggal
         if (tgl === '' || bln === '' || thn === '') {
           $('#errorTanggal').show();
           $('#tgl, #bln, #thn').addClass('is-invalid');
@@ -116,7 +103,6 @@
           $('#tgl, #bln, #thn').removeClass('is-invalid').addClass('is-valid');
         }
 
-        // Validasi Warna
         if (warna === '') {
           $('#errorWarna').show();
           $('#warna').addClass('is-invalid');
@@ -140,7 +126,6 @@
         }
       });
 
-      // Reset error saat input
       $('.form-control').on('input', function () {
         $(this).removeClass('is-invalid');
         $(this).siblings('.text-danger').hide();
