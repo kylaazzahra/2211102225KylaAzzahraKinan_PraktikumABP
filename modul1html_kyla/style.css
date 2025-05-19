@@ -1,13 +1,13 @@
 body {
-    background-color: #ffe5ec; /*backgouncd jadi pink muda*/
+    background-color: #ffffff; 
 }
 h1 {
-    color: #ec0c92; /*warna tulisan jadi pink*/
+    color: #ec0c92; 
 }
 p {
-    font-size: 18px; /*Ukuran font*/
-    font-family: Arial, sans-serif;/*Jenis font*/
-    text-align: center;/*Pengaturan teks menjadi tengahh*/
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    text-align: center;
 }
 .grid-container {
     display: grid;

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Formulir Pendaftaran Praktikan</title>
+ <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <h1>Formulir Pendaftaran Praktikan</h1>
+ <form action="#" method="POST">
+ <div class="form-group">
+ <label for="nama_id">Nama:</label>
+ <input type="text" name="nama_input" id="nama_id" placeholder="Input Nama"
+value="Praktikan" readonly>
+ </div>
+ <div class="form-group">
+ <label for="uname_id">Username:</label>
+ <input type="text" name="uname_input" id="uname_id" placeholder="Input
+Username" value="Praktikum" disabled>
+ </div>
+ <div class="form-group">
+ <label for="password_id">Password:</label>
+ <input type="password" name="password_input" id="password_id"
+placeholder="Input Password">
+</div>
+<div class="form-group">
+<label for="email_id">Email:</label>
+<input type="email" name="email_input" id="email_id" placeholder="Input
+Email">
+</div>
+<fieldset>
+<legend>Jenis Kelamin</legend>
+<div>
+<input type="radio" name="jk_input" id="pria" value="Pria">
+<label for="pria">Pria</label>
+</div>
+<div>
+<input type="radio" name="jk_input" id="wanita" value="Wanita">
+<label for="wanita">Wanita</label>
+</div>
+</fieldset>
+<fieldset>
+<legend>Hobi</legend>
+<div>
+<input type="checkbox" name="hobi_input" id="renang" value="Renang">
+<label for="renang">Renang</label>
+</div>
+<div>
+<input type="checkbox" name="hobi_input" id="bersepeda"
+value="Bersepeda">
+<label for="bersepeda">Bersepeda</label>
+</div>
+<div>
+<input type="checkbox" name="hobi_input" id="memancing"
+value="Memancing">
+<label for="memancing">Memancing</label>
+</div>
+</fieldset>
+<div class="form-group">
+<label for="jp_id">Jenjang Pendidikan:</label>
+<select name="jp_input" id="jp_id">
+<option value="" selected>------Pilih------</option>
+<option value="D3">Tamat D3</option>
+<option value="S1">Tamat S1</option>
+<option value="S2">Tamat S2</option>
+<option value="S3">Tamat S3</option>
+</select>
+</div>
+<div class="form-group">
+<label for="kritik_saran">Kritik & Saran:</label>
+<textarea id="kritik_saran" name="kritik_saran" rows="5"></textarea>
+</div>
+<div class="form-actions">
+<button type="button" class="btn-cancel">Cancel</button>
+<button type="submit" class="btn-submit">Submit</button>
+</div>
+</form>
+</body>
+</html>
